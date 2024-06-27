@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Local development configuration
+instance/
+
+# Environment variables
+.env
+
+# IDE files
+.idea/
+.vscode/
+
+# Compiled Python files
+*.pyc
+
+# Dependency directories
+venv/
+env/
+
+# Logs
+*.log
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+
+# Flask configuration
+*.cfg
+
+# SQLite database
+*.sqlite3
+
+# Ignore any local configuration you have defined
+config.py
+
+# Ignore package manager files
+pip-lock.txt
