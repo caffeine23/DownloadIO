@@ -32,8 +32,7 @@ htmlcov/
 # SQLite database
 *.sqlite3
 
-# Ignore any local configuration you have defined
-config.py
+
 
 # Ignore package manager files
 pip-lock.txt
