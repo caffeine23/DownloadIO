@@ -1,4 +1,6 @@
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { FaInstagram, FaYoutube, FaReddit } from "react-icons/fa";
+
 import LinkInput from "./LinkInput";
 
 export default function WebsitePicker() {
@@ -12,9 +14,15 @@ export default function WebsitePicker() {
         className="mt-4"
       >
         <TabList>
-          <Tab>Instagram</Tab>
-          <Tab>YouTube</Tab>
-          <Tab>Reddit</Tab>
+          <Tab>
+            Instagram <FaInstagram className="ml-2" />
+          </Tab>
+          <Tab>
+            YouTube <FaYoutube className="ml-2" />
+          </Tab>
+          <Tab>
+            Reddit <FaReddit className="ml-2" />
+          </Tab>
         </TabList>
 
         <TabPanels>

@@ -7,6 +7,7 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { FaDownload, FaCheck } from "react-icons/fa";
 import axios from "axios";
 
 export default function LinkInput({ site }) {
@@ -67,7 +68,12 @@ export default function LinkInput({ site }) {
               MP3
             </Radio>
           </RadioGroup>
-          <Button colorScheme="green" size="md" type="submit">
+          <Button
+            rightIcon={<FaCheck />}
+            colorScheme="green"
+            size="md"
+            type="submit"
+          >
             Submit
           </Button>
         </Stack>
@@ -75,6 +81,7 @@ export default function LinkInput({ site }) {
           <div className="flex justify-center mt-4">
             {isDownloadReady ? (
               <Button colorScheme="blue" size="lg" onClick={handleDownload}>
+                <FaDownload className="mr-2" />
                 Download
               </Button>
             ) : (
